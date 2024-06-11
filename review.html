@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laisser un avis</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laissez un avis pour le produit</h1>
+        <form id="reviewForm" method="POST" action="submit_review.php">
+            <input type="hidden" name="product_id" id="product_id" value="">
+            <input type="hidden" name="rating" id="rating" value="">
+        </form>
+        <div id="star-rating">
+            <div data-value="5" class="star-row">
+                <span>5.0</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+            <div data-value="4" class="star-row">
+                <span>4.0</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+            </div>
+            <div data-value="3" class="star-row">
+                <span>3.0</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+            <div data-value="2" class="star-row">
+                <span>2.0</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+            <div data-value="1" class="star-row">
+                <span>1.0</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+        <button id="submit-btn">Soumettre</button>
+        <div id="reviewsContainer">
+            <h2>Avis précédents</h2>
+            <ul id="reviewsList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
